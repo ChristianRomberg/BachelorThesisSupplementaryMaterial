@@ -51,6 +51,7 @@ plot3.scatter(times_per_split["split"] / preview_factor, times_per_split["transl
               label="time for second stage (s)", c="tab:blue")
 
 fig.gca().xaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
+fig.gca().tick_params(axis='x', labelrotation=20)
 plot3.set_xlabel("Number of gene families")
 # plt.ylabel("Percentage of mapped reads")
 # plt.title("Gene family vs cumulative abundance")
